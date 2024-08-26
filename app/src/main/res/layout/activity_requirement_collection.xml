@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Requirement_collection">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Project Title -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="312dp"
+            android:layout_marginStart="222dp"
+            android:layout_marginTop="-100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/form" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="110dp"
+            android:paddingBottom="8dp"
+            android:text="Project Title"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/editTextProjectTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextProjectTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Project Title"
+            android:imeOptions="actionNext"
+            android:nextFocusDown="@+id/editTextTeamName"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTeamName"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <!-- Team Name -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="Team Name"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTeamName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextProjectTitle" />
+
+        <EditText
+            android:id="@+id/editTextTeamName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Team Name"
+            android:imeOptions="actionNext"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTeamLeaderName"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <!-- Team Leader Name -->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="Team Leader Name"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTeamLeaderName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTeamName" />
+
+        <EditText
+            android:id="@+id/editTextTeamLeaderName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Team Leader Name"
+            android:imeOptions="actionNext"
+            app:layout_constraintBottom_toTopOf="@+id/textView6"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTeamLeaderId"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <!-- Team Leader ID -->
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="Team Leader ID"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTeamLeaderId"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTeamLeaderName" />
+
+        <EditText
+            android:id="@+id/editTextTeamLeaderId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Team Leader ID"
+            android:imeOptions="actionNext"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="@+id/editTextContactNumber"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <!-- Contact Number -->
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="Contact Number"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/editTextContactNumber"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTeamLeaderId" />
+
+        <EditText
+            android:id="@+id/editTextContactNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Contact Number"
+            android:inputType="phone"
+            android:imeOptions="actionNext"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="@+id/editTextNumOfMembers"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <!-- Number of Team Members -->
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="Number of Team Members"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/editTextNumOfMembers"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextContactNumber" />
+
+        <EditText
+            android:id="@+id/editTextNumOfMembers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Number of Team Members"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            app:layout_constraintBottom_toTopOf="@+id/dynamicFieldsContainer"
+            app:layout_constraintEnd_toEndOf="@+id/dynamicFieldsContainer"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <!-- Dynamic Fields Container -->
+        <LinearLayout
+            android:id="@+id/dynamicFieldsContainer"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/submitButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumOfMembers" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/dynamicFieldsContainer"
+            app:layout_constraintStart_toStartOf="@+id/dynamicFieldsContainer"
+            app:layout_constraintTop_toBottomOf="@+id/dynamicFieldsContainer" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
