@@ -1,5 +1,6 @@
 package com.example.eventx20;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -65,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onSuccess(Object model) {
                             Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(MainActivity.this, Requirement_collection.class);
+                            Intent intent = new Intent(MainActivity.this, currentevents.class);
                             startActivity(intent);
                             finish();
                         }
@@ -86,8 +87,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
    });
-
-
-
     }
 }

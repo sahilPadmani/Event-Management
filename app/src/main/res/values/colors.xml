@@ -5,6 +5,7 @@
     <color name="white">#ffffff</color>
     <color name="Black">#000000</color>
 <!--    <color name="backgorund">#00ccff</color>-->
+    <color name="gray">#808080</color>
     <color name="backgorund">#66ff99</color>
     <color name="logocolor">#9d0eea</color>
     <color name="blue">#154c79</color>
